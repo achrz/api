@@ -12,7 +12,9 @@ class TodoController extends Controller
         $todosModel = new \App\Models\TodosModel();
 
         // Get todos from the model
-        $data['todos'] = $todosModel->getTodos();
+        $awokwok = $todosModel->getTodos();
+        $xixixi = json_decode($awokwok, true);
+        $data['bosco'] = $xixixi['bsc_umr_stck'];
         // print_r($data);
         // exit;
         // Load view

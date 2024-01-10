@@ -14,11 +14,11 @@
     <h1>Todos List</h1>
 
     <?php
-    if (!empty($todos)) : ?>
+    if (!empty($bosco)) : ?>
         <ul>
-            <?php foreach ($todos as $todo) : ?>
-                <li><?= $todo['id']; ?></li>
-                <li><?= $todo['title']; ?></li>
+            <?php foreach ($bosco as $todo) : ?>
+                <li><?= $todo['no']; ?></li>
+                <li><?= $todo['code_item']; ?></li>
             <?php endforeach; ?>
         </ul>
     <?php else : ?>
